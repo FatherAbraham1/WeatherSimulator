@@ -34,7 +34,7 @@ with 16 named weather stations. Weather predictions for a particular day could l
     ORD|41.833393|-88.012344|2017-06-19T23:58:03Z|Sunny|15.8|1024.0|48
 
 By default, the simulation predicts the weekly weather for the whole year.
-The results are stored in [results\weather-stations-results.psv](results\weather-stations-results.psv).
+The results are stored in [results/weather-stations-results.psv](results/weather-stations-results.psv).
 To run it with default options:
 
     sbt run

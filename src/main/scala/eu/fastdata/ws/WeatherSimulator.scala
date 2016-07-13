@@ -12,7 +12,7 @@ object WeatherSimulator {
     val steps = Try(args(0).toInt).getOrElse(52)
     val outputFileName = Try(args(1)).getOrElse("results/weather-stations-results.psv")
     val seedVerticesFileName = Try(args(2)).getOrElse("seed-data/vertices.csv")
-    val seedEdgesFileName = Try(args(2)).getOrElse("seed-data/edges.csv")
+    val seedEdgesFileName = Try(args(3)).getOrElse("seed-data/edges.csv")
 
     val sparkConf = new SparkConf().setAppName("WeatherSimulator").setMaster("local[*]")
     val sc = new SparkContext(sparkConf)
